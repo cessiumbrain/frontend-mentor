@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "DMS-ital";
+  src: url("./assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf");
+}
+@font-face {
+  font-family: "DMS";
+  src: url("./assets/fonts/DMSans-VariableFont_opsz,wght.ttf");
+}
+.grid {
+  margin: auto;
+  font-family: "DMS-ital";
+  display: grid;
+  width: 90%;
+  min-height: 90vh;
+  padding: 30px;
+  height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 10px;
+  background-color: rgb(244, 244, 244);
+}
+.grid .box {
+  border-radius: 10px;
+  display: flex;
+}
+.grid .a {
+  grid-column: 2/span 2;
+  grid-row: 1/span 2;
+  background-color: rgb(97, 53, 211);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grid .a i {
+  color: rgb(255, 195, 87);
+}
+.grid .a .primary-copy {
+  text-align: center;
+  padding: 15px;
+  font-size: 50px;
+}
+.grid .a .primary-copy span {
+  color: rgb(255, 195, 87);
+}
+.grid .b {
+  grid-column: 2/span 1;
+  grid-row: 3/span 2;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  background-color: rgb(255, 255, 255);
+}
+.grid .b img {
+  width: 90%;
+}
+.grid .c {
+  grid-column: 3/span 1;
+  grid-row: 3/span 2;
+  background-color: rgb(255, 195, 87);
+  flex-direction: column;
+  font-size: 25px;
+  padding: 10px 10px 0px 10px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.grid .c img {
+  width: 50%;
+  margin-top: 5px;
+}
+.grid .d {
+  grid-column: 4/span 1;
+  grid-row: 1/span 4;
+  background-color: rgb(211, 197, 249);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.grid .d p:nth-of-type(1) {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+.grid .d img {
+  width: 90%;
+}
+.grid .e {
+  padding: 40px;
+  grid-column: 1/span 1;
+  grid-row: 1/span 3;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  justify-content: center;
+  background-color: rgb(249, 233, 219);
+  font-weight: 500;
+  line-height: 25px;
+}
+.grid .e .copy {
+  margin: 20px;
+}
+.grid .e .copy em {
+  color: rgb(97, 53, 211);
+}
+.grid .e .btn {
+  font-size: 20px;
+  background-color: rgb(255, 195, 87);
+  padding: 10px;
+  border-radius: 25px;
+  color: rgb(97, 53, 211);
+}
+.grid .e .btn i {
+  color: rgb(97, 53, 211);
+}
+.grid .f {
+  grid-column: 3/span 2;
+  grid-row: 5/span 2;
+  background-color: rgb(97, 53, 211);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 30px;
+}
+.grid .f img {
+  height: 80%;
+}
+.grid .g {
+  grid-column: 1/span 1;
+  grid-row: 4/span 3;
+  background-color: rgb(255, 195, 87);
+  font-size: 2em;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid .g img {
+  width: 90%;
+}
+.grid .h {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  grid-column: 2/span 1;
+  grid-row: 5/span 2;
+  justify-content: center;
+  align-items: center;
+}
+.grid .h .fifty-six-percent {
+  font-size: 50px;
+  margin: 0px;
+  font-family: "DMS";
+  font-weight: 500;
+}
+.grid .h img {
+  width: 60%;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-rows: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
