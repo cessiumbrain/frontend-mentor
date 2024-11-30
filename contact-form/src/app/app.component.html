@@ -1,0 +1,75 @@
+
+<form [formGroup]="form" class="form">
+  <h1>Contact Us</h1>
+  <div class="row one">
+    <div class="form-group">
+      <label>First Name <span>*</span></label>
+      <input 
+        [ngClass]="{error : form.get('firstName')?.errors && submitClicked}"
+        formControlName="firstName"
+        type="text">
+    </div>
+    <div class="form-group">
+      <label>Last Name <span>*</span></label>
+      <input
+      [ngClass]="{error : form.get('lastName')?.errors && submitClicked }"
+      formControlName="lastName" 
+      type="text">
+    </div>
+  </div>
+  <div class="row two">
+    <div class="form-group">
+      <label>Email Address <span>*</span></label>
+      <input 
+      [ngClass]="{error : form.get('email')?.errors && submitClicked }"
+
+      formControlName="email"  
+      type="text">
+    </div>
+  </div>
+  <div class="row three">
+    <label class="query-type-label">Query Type <span>*</span></label>
+    <div 
+      class="radio-wrapper"
+      >
+      <div 
+      class="form-group"
+      [ngClass]="{error : form.get('queryType')?.errors && submitClicked }"
+      >
+        <input 
+        name="queryType" 
+        type="radio" 
+        value="general-enquiry"
+        formControlName="queryType">
+        <label>General Enquiry</label>
+      </div>
+      <div 
+      [ngClass]="{error : form.get('queryType')?.errors && submitClicked }"
+      class="form-group">
+        <input 
+        type="radio" 
+        value="support-request" 
+        name="queryType" 
+        formControlName="queryType">
+        <label for="">Support Request</label>
+      </div>
+    </div>
+  </div>
+  <div class="row four">
+    <label class="message-label">Message <span>*</span></label>
+    <textarea 
+    [ngClass]="{error : form.get('message')?.errors && submitClicked }"
+    formControlName="message"></textarea>
+  </div>
+  <div class="row five">
+    <input type="checkbox">
+    <label>I consent to being contacted by the team</label>
+  </div>
+  <div class="row six">
+    <div class="submit-btn" (click)="onSubmit()">Submit</div>
+  </div>
+  
+</form>
+
+<div *ngIf="toastMessage" class="toast-message">{{toastMessage}}</div>
+<router-outlet />

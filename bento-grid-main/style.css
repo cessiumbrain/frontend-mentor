@@ -6,6 +6,10 @@
   font-family: "DMS";
   src: url("./assets/fonts/DMSans-VariableFont_opsz,wght.ttf");
 }
+body {
+  background: rgb(244, 244, 244);
+}
+
 .grid {
   margin: auto;
   font-family: "DMS-ital";
@@ -68,6 +72,7 @@
   padding: 10px 10px 0px 10px;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-weight: 700;
 }
 .grid .c img {
@@ -127,10 +132,11 @@
   justify-content: center;
   align-items: center;
   padding: 15px;
-  font-size: 30px;
+  font-size: 1.4em;
 }
 .grid .f img {
-  height: 80%;
+  height: auto;
+  width: 50%;
 }
 .grid .g {
   grid-column: 1/span 1;
@@ -170,5 +176,6 @@
     grid-template-rows: 500px;
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */

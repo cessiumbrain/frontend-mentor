@@ -1,0 +1,16 @@
+$background: rgb(217,239,226);
+$text-color: rgb(84,84,90);
+$green: rgb(19,107,86);
+$input-height: 35px;
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../public/fonts/Karla-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Karla-Italic';
+    src: url('../public/fonts/Karla-Italic-VariableFont_wght.ttf');
+}
+$primary-font: 'Karla';
+$secondary-font: 'Karla-Italic';

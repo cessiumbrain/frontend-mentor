@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Karla";
+  src: url("../public/fonts/Karla-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Karla-Italic";
+  src: url("../public/fonts/Karla-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Karla";
+  src: url("../../public/fonts/Karla-Italic-VariableFont_wght.ttf");
+}
+.form {
+  background-color: white;
+  width: 55vw;
+  box-sizing: border-box;
+  font-family: "Karla";
+  border-radius: 10px;
+  padding: 20px;
+}
+.form label {
+  margin-bottom: 10px;
+}
+.form label span {
+  color: rgb(19, 107, 86);
+}
+.form .error {
+  color: red;
+  text-align: center;
+  border: 1px solid red !important;
+}
+.form input {
+  border: 1px solid rgb(84, 84, 90);
+  border-radius: 5px;
+  height: 35px;
+}
+.form label {
+  color: rgb(84, 84, 90);
+  font-size: 14px;
+}
+.form .row {
+  margin: 20px 10px;
+}
+.form .row.one {
+  display: flex;
+  justify-content: space-between;
+}
+.form .row.one .form-group {
+  width: 49%;
+}
+.form .row.one label {
+  display: block;
+}
+.form .row.one input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.form .row.two label {
+  display: block;
+}
+.form .row.two input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.form .row.three .query-type-label {
+  display: block;
+  margin-bottom: 10px;
+}
+.form .row.three .radio-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.form .row.three .radio-wrapper .form-group {
+  padding: 3px;
+  border-radius: 5px;
+  width: 49%;
+  box-sizing: border-box;
+  border: 1px solid rgb(84, 84, 90);
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+.form .row.three .radio-wrapper .form-group label {
+  margin-bottom: 0px;
+}
+.form .row.three .radio-wrapper .form-group input {
+  height: auto;
+}
+.form .row.four .message-label {
+  margin-bottom: 10px;
+  display: block;
+}
+.form .row.four textarea {
+  width: 100%;
+  resize: none;
+  height: 100px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.form .row.five {
+  display: flex;
+  align-items: center;
+}
+.form .row.five label {
+  margin-bottom: 0px;
+}
+.form .row.six .submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(19, 107, 86);
+  border-radius: 10px;
+  color: white;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.toast-message {
+  background: black;
+  position: fixed;
+  bottom: 10px;
+  width: 55vw;
+  box-shadow: 10px 5px 5px black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translate(0%, 200%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}/*# sourceMappingURL=app.component.css.map */

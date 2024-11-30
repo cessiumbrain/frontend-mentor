@@ -1,0 +1,158 @@
+@import'../variables';
+@font-face {
+    font-family: 'Karla';
+    src: url('../../public/fonts/Karla-Italic-VariableFont_wght.ttf');
+}
+$border-radius: 5px;
+
+.form {
+    background-color: white;
+    width: 55vw;
+    box-sizing: border-box;
+    font-family: $primary-font;
+    border-radius: 10px;
+    padding: 20px;
+    label{
+        margin-bottom: 10px;
+        span{
+            color: $green;
+        }
+    }
+    .error{
+        color: red;
+        text-align: center;
+        border: 1px solid red !important;
+    }
+
+    input{
+        border: 1px solid $text-color;
+        border-radius: $border-radius;
+        height: $input-height;
+    }
+    label{
+        color: $text-color;
+        font-size: 14px;
+    }
+.row{
+    margin: 20px 10px;
+}
+.row.one{
+    display: flex;
+    justify-content: space-between;
+
+    .form-group{
+        width: 49%;     
+        
+    }
+    label{
+        display: block;
+        
+    }
+    input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+.row.two{
+    label{
+        display: block;
+    }
+    input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+}
+.row.three{
+    .query-type-label{
+        display: block;
+        margin-bottom: 10px;
+        
+    }
+    .radio-wrapper{
+        display: flex;
+        justify-content: space-between;
+        .form-group{
+            padding: 3px;
+            border-radius: $border-radius;
+            width: 49%;
+            box-sizing: border-box;
+            border: 1px solid $text-color;
+            height: $input-height;
+            display: flex;
+            align-items: center;
+            label{
+                margin-bottom: 0px;
+            }
+            input{
+                height: auto;
+            }
+            
+        }
+    }
+    
+}
+.row.four{
+    .message-label{
+        margin-bottom: 10px;
+        display: block;
+    }
+    textarea{
+        width: 100%;
+        resize: none;
+        height: 100px;
+        box-sizing: border-box;
+        border-radius: $border-radius;
+
+    }
+}
+
+.row.five{
+    display: flex;
+    align-items: center;
+    label{
+        margin-bottom: 0px;
+    }
+
+}
+.row.six{
+    
+    .submit-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $green;
+        border-radius:10px;
+        color: white;
+        height: 40px;
+        text-align: center;
+        cursor: pointer;
+        
+    }
+}
+}
+
+.toast-message {
+    background: black;
+    position: fixed;
+    bottom: 10px;
+    width: 55vw;
+    box-shadow: 10px 5px 5px black;
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+@keyframes slide-up {
+    from {
+      transform: translate(0%, 200%);
+    }
+    to {
+      transform: translate(0%, 0%);
+    }
+  }
