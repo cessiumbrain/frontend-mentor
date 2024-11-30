@@ -147,12 +147,21 @@ $border-radius: 5px;
     border-radius: 5px;
 }
 
+@media (max-width: 800px) {
+.form{
+    width: 95vw;
+    padding: 2px;
 
-@keyframes slide-up {
-    from {
-      transform: translate(0%, 200%);
+.row.one{
+    flex-direction: column;
+    .form-group{
+        width: 100%;
+    };
+}
+.row.four{
+    textarea{
+        height: 50vh;
     }
-    to {
-      transform: translate(0%, 0%);
-    }
-  }
+}
+}    
+}

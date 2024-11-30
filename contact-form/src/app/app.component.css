@@ -130,11 +130,18 @@
   border-radius: 5px;
 }
 
-@keyframes slide-up {
-  from {
-    transform: translate(0%, 200%);
+@media (max-width: 800px) {
+  .form {
+    width: 95vw;
+    padding: 2px;
   }
-  to {
-    transform: translate(0%, 0%);
+  .form .row.one {
+    flex-direction: column;
+  }
+  .form .row.one .form-group {
+    width: 100%;
+  }
+  .form .row.four textarea {
+    height: 50vh;
   }
 }/*# sourceMappingURL=app.component.css.map */
